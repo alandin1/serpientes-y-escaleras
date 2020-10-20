@@ -90,7 +90,7 @@ class Juego{
                     this.jugadores[i].recorrido = this.tablero.revCasilla(turno)
                 }else{
                     end = true
-                    console.log("Ganador: ", this.jugadores[i].nombre, ". Color: ", this.jugadores[i].color)
+                    console.log("El ganador: ", this.jugadores[i].nombre, "y su color es: ", this.jugadores[i].color)
                 }
                 i++
             }
