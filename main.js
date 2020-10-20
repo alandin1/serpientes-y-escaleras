@@ -97,4 +97,24 @@ class Juego{
         }
     }
 
+mostrarJugadores(){
+    console.log(this.jugadores)
 }
+
+mostrarJugador(jugador){
+    console.log(this.jugadores[jugador])
+}
+
+}
+
+let juego = new Juego()
+let ju1 = new Jugador("Carlos", "amarillo")
+let ju2 = new Jugador("Martin", "verde")
+let ju3 = new Jugador("Roman", "rojo")
+let ju4 = new Jugador("Fernanda", "azul")
+juego.anadirJugador(ju1)
+juego.anadirJugador(ju2)
+juego.anadirJugador(ju3)
+juego.anadirJugador(ju4)
+juego.iniciar()
+juego.mostrarJugadores()
