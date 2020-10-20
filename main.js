@@ -12,4 +12,9 @@ class Jugador{
         this.recorrido = 0
     }
 
+    tirarDado(){
+        let dado = new Dado()
+        return this.recorrido += dado.tirar()
+    }
+
 }
