@@ -66,3 +66,11 @@ class Tablero{
         console.log(this.casillas)
     }
 }
+
+class Juego{
+    constructor(){
+        this.jugadores = []
+        this.tablero = new Tablero()
+        this.tablero.rellenar()
+    }
+}
