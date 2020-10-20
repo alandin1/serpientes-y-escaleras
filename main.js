@@ -61,10 +61,6 @@ class Tablero{
     revCasilla(casilla){
         return this.casillas[casilla]
     }
-
-    verTablero(){
-        console.log(this.casillas)
-    }
 }
 
 class Juego{
@@ -96,15 +92,6 @@ class Juego{
             }
         }
     }
-
-mostrarJugadores(){
-    console.log(this.jugadores)
-}
-
-mostrarJugador(jugador){
-    console.log(this.jugadores[jugador])
-}
-
 }
 
 let juego = new Juego()
@@ -117,4 +104,3 @@ juego.anadirJugador(ju2)
 juego.anadirJugador(ju3)
 juego.anadirJugador(ju4)
 juego.iniciar()
-juego.mostrarJugadores()
