@@ -73,4 +73,28 @@ class Juego{
         this.tablero = new Tablero()
         this.tablero.rellenar()
     }
+
+    anadirJugador(jugador){
+        this.jugadores.push(jugador)
+    }
+
+    iniciar(){
+        let end = false
+        let nJugadores = this.jugadores.length
+        while(end == false){
+            let i = 0
+            while(i<nJugadores && end == false){
+                let turno = this.jugadores[i].tirarDado()
+                this.jugadores[i].tiros += 1
+                if (turno<100){
+                    this.jugadores[i].recorrido = this.tablero.revCasilla(turno)
+                }else{
+                    end = true
+                    console.log("Ganador: ", this.jugadores[i].nombre, ". Color: ", this.jugadores[i].color)
+                }
+                i++
+            }
+        }
+    }
+
 }
